@@ -5,6 +5,7 @@
 % http://www.cns.nyu.edu/~lcv/
 %
 % Updated by Peter H. Li, fall/winter 2013
+% Changes/adjustments made by Eero, spring/fall 2014
 %
 % This script demonstrates a method for sorting spikes recorded on
 % one or more extracellular electrodes.  Unlike the commonly used
@@ -16,7 +17,7 @@
 %
 % A unified framework and method for automatic neural spike identification.
 % C Ekanadham, D Tranchina, and E P Simoncelli. J. Neuroscience Methods, 
-% vol. 222, pp. 47--55, Jan 2014 (Published online 21 Nov 2013).
+% vol. 222, pp. 47--55, Jan 2014.
 % doi: 10.1016/j.jneumeth.2013.10.001  
 % http://www.cns.nyu.edu/~lcv/pubs/makeAbs.php?loc=Ekanadham13
 %
@@ -169,7 +170,7 @@ if (params.general.plot_diagnostics)
 end
 
 %% -----------------------------------------------------------------
-% Preprocessing Step 2: Estimate noise covariance and whiten
+% Preprocessing Step 2: Estimate noise covariance and whiten data
 
 % Whiten the noise (assuming space/time separability). This is not strictly
 % needed by the CBP method, but it makes the L2-norm portion of the objective 
